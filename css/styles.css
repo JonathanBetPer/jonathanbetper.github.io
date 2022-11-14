@@ -373,25 +373,23 @@ input {
     padding: 1rem;
 }
 
-
 .skill {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
     margin-top: 3rem ;
-    gap: 2rem;
 }
-
-
 
 @media (min-width: 1020 ){
     .skill {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: auto auto;
         justify-content: space-around;
         margin-top: 3rem ;
+        gap: 2rem;
     }
 }
+
 .skill p {
     font-weight: bolder;
     margin-right: 3rem;
@@ -407,6 +405,5 @@ input {
     background-color: var(--blanco);
     padding:1rem;
     border-radius: 2rem;
-
 
 }
