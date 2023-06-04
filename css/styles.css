@@ -12,7 +12,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body{
     font-size: 16px;
     font-family: 'Krub', sans-serif;
@@ -143,69 +142,34 @@ a {
 .proyectos {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 2rem;
+    gap: 0.5rem;
 
 }
 
-@media (min-width: 789px ){
+@media (min-width: 20000px ){
 
     .unProyecto {
         display: grid;
         grid-template-columns: 75% 15%;
+        align-items: center;
+    justify-items: center;
     }
 
-    .proyectos svg {
-        margin-top: 4rem;
-        height: 5rem;
-        width: 5rem;
-        background-color: var(--blanco);
-        color: var(--primario);
-    }
 
-    .proyectos .icono :hover{
-        margin-top: 4rem;
-        height: 5rem;
-        width: 5rem;
-        background-color: var(--oscuro);
-        color: var(--secundario);
-    }
 }
 
 .unProyecto {
     display: grid;
     grid-template-rows: auto auto;
-    align-items: center;
-    justify-items: center;
     
 }
 
-
-.proyectos svg {
-    margin-top: -1rem;
-    height: 5rem;
-    width: 5rem;
-    background-color: var(--primario);
-    color: var(--secundario);
-}
-
-.proyectos .icono :hover{
-    margin-top: -1rem;
-    height: 5rem;
-    width: 5rem;
-    background-color: var(--secundario);
-    color: var(--oscuro);
-}
 
 .proyectos a {
     text-decoration: none;
     color: #000000;
 }
 
-.proyectos a :hover{
-    text-decoration-color: var(--primario);
-    color: var(--primario);
-
-}
 
 svg {
     height: 7rem;
@@ -213,7 +177,6 @@ svg {
     background-color: var(--primario);
     color: var(--secundario);
     border-radius: 1rem;
-
 }
 
 .contacto h3 {
@@ -230,8 +193,6 @@ svg {
     justify-content:space-evenly;
     align-items: center;
     margin-bottom: 2rem;
-
-    
 }
 
 .doble{
@@ -301,7 +262,6 @@ h4 span {
     color: var(--blanco);
  
 }
-
 
 @media (min-width: 789px ){
  
@@ -408,20 +368,20 @@ input {
   
   .carrusel-contenido {
     display: flex;
-    animation: carrusel-animacion 15s infinite linear;
+    animation: carrusel-animacion 25s infinite linear;
+    animation-fill-mode: forwards;
   }
   
   .carrusel-item {
     flex-shrink: 0;
-    width: 100%;
+    width: 30%;
   }
   
   @keyframes carrusel-animacion {
     0% {
-      transform: translateX(0);
+      transform: translateX(5%);
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateX(-90%);
     }
-  }
-  
+}

@@ -1,0 +1,283 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+
+/*Globables*/
+:root {
+    --primario: #9C27B0;
+    --primarioOscuro: #89119D;
+    --secundario: #FFCE00;
+    --secundarioOscuro: rgb(233,287,2);
+    --blanco: #FFF;
+    --negro: #000;  
+    --fuentePrincipal: 'Staatliches', cursive; 
+    
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: var(--fuentePrincipal)
+}
+
+*, *:after,*:before{
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.8rem;
+    color: var(--blanco);
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+}
+
+h1 {
+    font-size: 4rem;    
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    margin: 3rem 0;
+}		
+  
+footer {
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0; 
+    margin-top: 2rem;
+    font-family: var(--fuentePrincipal);
+}
+
+footer p {
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+
+.navegacion {
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0 ;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navegacion a {
+    color: var(--blanco);
+    font-size: 3rem;
+}
+
+
+.navegacion :hover {
+    color: var(--secundario);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
+.producto{
+    background-color: var(--primarioOscuro);
+    padding: 1rem;
+}
+
+.nombre {
+    font-size: 4rem;
+}
+
+.precio {
+    font-size: 2.8rem;
+    color: var(--secundario);
+}
+
+.nombre,
+.precio {
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.2
+}
+
+.grafico {
+    min-height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1 / 3;
+}
+
+.imagenCamisas {    
+    grid-row: 2 / 3;
+    background-image: url(../img/grafico1.jpg);
+    border-radius: 0.5rem;
+}
+
+.imagenNode {    
+    grid-row: 8 / 9;
+    background-image: url(../img/grafico2.jpg);
+    border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .imagenNode {    
+        grid-column: 2 / 4;
+        grid-row: 5 / 6;
+    }
+}
+
+
+
+/* Pagina nosotros */
+
+.bloques {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+@media (min-width: 1024px) {
+    .bloques {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+
+.bloque {
+    text-align: center;
+}
+
+.bloque .titulo {
+    margin: 0;
+}
+
+.bloque .imagen {
+    width: 100%;
+}
+
+.nosotros p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 1300px) {
+    .nosotros {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       
+    }
+    .nosotros img {
+        margin-left: 3rem;
+    }
+}
+
+
+
+/* Pagina producto */
+
+@media (min-width: 830px) {
+    .camisa {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+}
+
+.camisa{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.camisa .imagen {
+    width: 50rem;
+    height: 50rem;
+    align-items: center;
+}
+
+.camisa p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    
+}
+
+.campo {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1rem solid var(--primarioOscuro);
+    background-color: transparent;
+    color: var(--negro);
+    font-weight:550;
+    padding: 1rem;
+    appearance: none;
+    
+}
+
+::placeholder {
+    color: var(--negro);
+    opacity: 1;
+}
+
+.boton {
+    background-color: var(--secundario);
+    border: none;
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+    padding: 2rem;
+    transition: background-color .3s ease;
+    grid-column: 1 / 3;
+}
+
+.boton :hover {
+    background-color: var(--secundarioOscuro);
+    cursor: pointer;
+}

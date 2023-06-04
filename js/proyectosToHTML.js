@@ -21,7 +21,7 @@ fetch('./js/info_proyectos.json')
         var enlaceElement = document.createElement('a');
         enlaceElement.href = proyecto.url;
         var iconoElement = document.createElement('div');
-        iconoElement.classList.add('icono');
+        iconoElement.classList.add('imagen_proyecto');
         var imagenElement = document.createElement('img');
         imagenElement.src = proyecto.imagen;
         imagenElement.alt = '';

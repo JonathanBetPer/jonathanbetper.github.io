@@ -1,0 +1,233 @@
+/*Coded by Jonathan Betancor*/
+
+/*Font Family: [League Spartan] - Weights: 400, 500, 700 */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+/*Variables*/
+:root {
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+    --SoftPink: hsl(333, 80%, 67%);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%, 0,3);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+
+    --Font: 'League Spartan', sans-serif;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--Font);
+    font-size: 15px;
+    color: var(--VeryDarkMagenta);
+    background-image: url(images/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat;
+    margin-top: 5rem;
+}
+
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+
+/*P3incipal*/
+.principal {
+    text-align: center;
+}
+
+.principal h1 {
+    font-size: 3rem;
+    line-height: 2.4rem;
+}
+
+.principal p {
+    margin-top: 2rem;
+}
+
+
+
+/*Puntuaciones*/
+.puntuaciones {
+    margin-top: 2.5rem;
+}
+
+.puntuaciones div {
+    text-align: center;
+    margin-bottom: 1rem;
+    background-color: var(--LightGrayishMagenta);
+    border-radius: 7px;
+    padding: 1rem 0;
+}
+
+.puntuaciones img {
+    margin-right: 0.3rem;
+}
+
+.puntuaciones p {
+    margin-top: 0.6rem;
+    font-weight: bold;
+}
+
+
+
+/*Opiniones*/
+.opiniones {
+    margin-top: 3rem;
+    font-size: 0.85rem;
+}
+
+.inforUsuarios {
+    background-color: var(--VeryDarkMagenta);
+    padding: 2.5rem 1.8rem 2rem;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+    
+}
+
+.inforUsuarios img {
+    border-radius: 50%;
+    width: 3rem;
+}
+
+.inforUsuarios h1, 
+.inforUsuarios p {
+    color: var(--White);
+    font-size: 0.85rem;
+}
+
+.inforUsuarios em {
+    font-style: normal;
+    color: var(--SoftPink);
+    display: block;
+    margin-top: 0.3rem;
+}
+
+.inforUsuarios p {
+    margin-top: 2rem;
+    font-size: 0.85rem;
+}
+
+.inforUsuarioFlex {
+    display: flex;
+    align-items: center;
+}
+
+.inforUsuarioIzq {
+    margin-left: 25px;
+}
+
+
+
+
+@media screen and (min-width: 1440px) {
+    body {
+        margin-top: 8rem;
+        background-image: url(images/bg-pattern-top-desktop.svg);
+        background-repeat: no-repeat;
+        
+    }
+
+    .contenedor {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .main,
+    .opiniones {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main .principal,
+    .main .puntuaciones {
+        margin-top: 0;
+    }
+
+    .principal {
+        text-align: left;
+        width: 33%;
+    }
+
+
+
+    .puntuaciones {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .puntuaciones div {
+        text-align: left;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .puntuaciones__review,
+    .puntuaciones__guru,
+    .puntuaciones__besttech {
+        width: 80%;
+    }
+
+    .puntuaciones__review p,
+    .puntuaciones__guru p,
+    .puntuaciones__besttech p {
+        display: inline-block;
+        margin-left: 1.5rem;
+    }
+
+    .puntuaciones__guru {
+        align-self: center;
+    }
+
+    .puntuaciones__besttech {
+        align-self: flex-end;
+    }
+
+
+
+    .opiniones {
+        height: 300px;
+    }
+
+    .inforUsuarios {
+        width: 32%;
+        margin-bottom: 0;
+    }
+
+
+    /*Para colocar las opiniones escalonadas*/
+    .arriba {
+        align-self: flex-start;
+    }
+
+    .centro {
+        align-self: center;
+    }
+
+    .abajo {
+        align-self: flex-end;
+    }
+
+}
+
+/*Footer (estilo predeterminados)*/
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+

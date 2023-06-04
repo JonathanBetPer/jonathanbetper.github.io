@@ -1,24 +1,38 @@
 {
     "proyectos" : [
         {
-            "nombre": "HTML1", 
-            "descripcion": "prueba",
-            "imagen": "./img/cosahtmL.PNG",
-            "url":"./Freelancer/Diseñador Freelancer.html"
+            "nombre": "FrontEnd Store", 
+            "descripcion": "Tienda con artículos de lengujaes de programación",
+            "imagen": "./img/Proyectos/FrontEndStore.png",
+            "url":"./otrosProyectos/FrontEndStore/index.html"
         },
 
         {
-            "nombre": "HTML2", 
-            "descripcion": "prueba",
-            "imagen": "./img/cosahtmL.PNG",
-            "url":"./Freelancer/Diseñador Freelancer.html"
+            "nombre": "Product Preview Card Component", 
+            "descripcion": "Proyecto Frontend Mentor",
+            "imagen": "./img/Proyectos/Product-Preview-Card-Component.png",
+            "url":"./otrosProyectos/Product-Preview-Card-Component/index.html"
         },
 
         {
-            "nombre": "HTML3", 
-            "descripcion": "prueba",
-            "imagen": "./img/cosahtmL.PNG",
-            "url":"./Freelancer/Diseñador Freelancer.html"
+            "nombre": "Single Price grid component", 
+            "descripcion": "Proyecto Frontend Mentor",
+            "imagen": "./img/Proyectos/single-price-grid-component.png",
+            "url":"./otrosProyectos/single-price-grid-component/index.html"
+        },
+
+        {
+            "nombre": "Social proof section", 
+            "descripcion": "Proyecto Frontend Mentor",
+            "imagen": "./img/Proyectos/Social-proof-section.png",
+            "url":"./otrosProyectos/Social-proof-section/index.html"
+        },
+
+        {
+            "nombre": "Testimonials grid section", 
+            "descripcion": "Proyecto Frontend Mentor",
+            "imagen": "./img/Proyectos/testimonials-grid-section.png",
+            "url":"./otrosProyectos/testimonials-grid-section/index.html"
         }
     ]
 }
