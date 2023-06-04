@@ -15,7 +15,6 @@
 
 <body >
 
-
     <header >
         
         
@@ -340,54 +339,49 @@
                 </div>
 
 
+            
+                    
                 <div class="formulario">
+
                     <h3>or you can also send me a message</h3>
-                    <form autocomplete >
-                        
+
+                    <form id="formulario" autocomplete="off">
+
                         <div class="contenedor-campos">
-                            
                             <div class="campo">
                                 <label for="nombre">Name</label>
-                                <input type="text" id="nombre" name="nombre" placeholder="Your name">
-                                    
+                                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
                             </div>
-
                             <div class="campo">
                                 <label for="telefono">Phone number</label>
-                                <input type="tel" pattern="[0-9]{9}" id="telefono" name="telefono" placeholder="Your phone number">
+                                <input type="tel" pattern="[0-9]{9}" id="telefono" name="telefono" placeholder="Tu teléfono">
                             </div>
-
                             <div class="unacolumna">
-
                                 <div class="campo">
-                                    <label for="telefono">Email</label>
-                                    <input type="email" id="correo" name="correo" placeholder="Your email">
+                                    <label for="correo">Email</label>
+                                    <input type="email" id="correo" name="correo" placeholder="Tu correo">
                                 </div>
-
                                 <div class="campo">
                                     <label for="mensaje">Message</label>
-                                    <textarea></textarea>
+                                    <textarea id="mensaje" name="mensaje"></textarea>
                                 </div>
-
                             </div>
-
-
                         </div>
+
+            
                         <div class="iconos">
-                            <a class="boton" href="#">Send</a>
+                            <button type="submit" class="boton">Send</button>
                         </div>
-                        
+
+
                     </form>
 
-                    
+                    <script src="./form-validacion.js"></script>
 
                 </div>
                  
-
-                
             
-            </div>
-            
+            </div>  
 
         
         </div>
