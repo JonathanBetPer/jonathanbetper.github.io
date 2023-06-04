@@ -4,12 +4,12 @@
     --primario:#d62442;
     --secundario:#dbcb86;
     --gris: #746767;
-
     --top: #d4a98a;
 }
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 
@@ -17,8 +17,6 @@ body{
     font-size: 16px;
     font-family: 'Krub', sans-serif;
     background-image: linear-gradient(to top, var(--top) 0%, var(--blanco) 100%);
-    
-
 }
 
 .boton{
@@ -31,7 +29,6 @@ body{
     font-weight: 700;
     text-transform: uppercase;
     border:none;
-
 }
 
 .sombra {
@@ -333,9 +330,7 @@ h4 span {
     .unacolumna .campo {
      width: 201%;
     }
- 
 }
- 
  
 .campo textarea{
     margin-top: 0.9rem;
@@ -400,10 +395,33 @@ input {
 }
 
 .sombra-skill{
-
     box-shadow: 0px 0px 16px 0px rgba(61,60,61,0.79);
     background-color: var(--blanco);
     padding:1rem;
     border-radius: 2rem;
-
 }
+
+.carrusel {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carrusel-contenido {
+    display: flex;
+    animation: carrusel-animacion 15s infinite linear;
+  }
+  
+  .carrusel-item {
+    flex-shrink: 0;
+    width: 100%;
+  }
+  
+  @keyframes carrusel-animacion {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

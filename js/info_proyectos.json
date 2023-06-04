@@ -1,0 +1,24 @@
+{
+    "proyectos" : [
+        {
+            "nombre": "HTML1", 
+            "descripcion": "prueba",
+            "imagen": "./img/cosahtmL.PNG",
+            "url":"./Freelancer/Diseñador Freelancer.html"
+        },
+
+        {
+            "nombre": "HTML2", 
+            "descripcion": "prueba",
+            "imagen": "./img/cosahtmL.PNG",
+            "url":"./Freelancer/Diseñador Freelancer.html"
+        },
+
+        {
+            "nombre": "HTML3", 
+            "descripcion": "prueba",
+            "imagen": "./img/cosahtmL.PNG",
+            "url":"./Freelancer/Diseñador Freelancer.html"
+        }
+    ]
+}
